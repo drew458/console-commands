@@ -85,3 +85,4 @@ reg		add/read/import/export registry entries
 
 
 batch file	->	:main   start	goto main
+shutdown -s -t 60

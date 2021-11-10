@@ -80,13 +80,24 @@ chmod 755 <file>	Change the permission of a file to 755
 chmod -R 600 <dir>	Change the permission of a folder (and its contents) to 600
 chown <user>:<group> <file>	Change the ownership of a file to user and group. Add -R to include folder contents
 
-Processes
+Processes & Statistics
 ps -ax	Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal
 ps -aux	Shows all the processes with %cpu, %mem, page in, PID, and command
 top	Display live information about currently running processes
 htop	See processes and memory stats 
 top -ocpu -s 5	Display processes sorted by CPU usage, updating every 5 seconds
 top -o rsize	Sort top by memory usage
+vmstat  Report virtual memory statistics
+dstat, atop – helps correlate all existing resource data for processes, memory, paging, block I/O, traps, and CPU activity.
+iftop – interactive network traffic viewer per interface
+nethogs – interactive network traffic viewer per process
+iotop – interactive I/O viewer[8]
+iostat – for storage I/O statistics
+netstat – for network statistics
+mpstat – for CPU statistics
+tload – load average graph for terminal
+xload – load average graph for X
+/proc/loadavg – text file containing load average
 kill PID	Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
 ps -ax | grep <appname>	Find a process by name or PID
 
