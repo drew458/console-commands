@@ -39,6 +39,10 @@ du -s	Display an entry for each specified file
 du -sk* | sort -nr	List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
 df -h	Calculate your system's free disk space
 df -H	Calculate free disk space in powers of 1,000 (as opposed to 1,024)
+lscpu   Show cpu stats
+lshw    Show hardware stats
+hwinfo  Show hardware infos
+inixi -Fx   Show hardware info, beautifully wrapped
 
 File and Directory Management
 mkdir <dir>	Create new folder named <dir>

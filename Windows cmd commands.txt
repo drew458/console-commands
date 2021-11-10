@@ -82,3 +82,6 @@ gpupdate	update group policies
 perfmon		start performance monitor
 prompt		change command prompt
 reg		add/read/import/export registry entries
+
+
+batch file	->	:main   start	goto main
