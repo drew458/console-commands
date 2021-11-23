@@ -63,9 +63,11 @@ rm -i <file>	Delete a file only when you give confirmation
 rm -f <file>	Force removal without confirmation
 rm <file1> <file2> <file3>	Delete multiple files without any confirmation
 mv <file> <newfilename>	Move/rename
-mv <file> <dir>	Move a file to the folder, possibly by overwriting an existing file
+mv <file> <dir> Move a file to the folder, possibly by overwriting an existing file
 mv -i <file> <dir>	Optional -i flag to warn you before overwriting the file
 mv *.png ~/<dir>	Move all PNG files from current folder to a different folder
+mdfind  Spotlight search file
+open    Open a file with desktop app
 
 Command History
 Ctrl + R	Search through previously used commands
@@ -108,7 +110,6 @@ curl -O <url/to/file>	Download file via HTTP, HTTPS, or FTP
 ssh <username>@<host>	Establish SSH connection to <host> with user <username>
 scp <file><user>@<host>:/remote/path	Copy <file> to a remote <host>
 nettop	Dispaly network activity
-networkQuality   test network speed and responsiveness
 
 Homebrew
 brew doctor	Check brew for potential problems
@@ -140,3 +141,4 @@ sudo powermetrics --samplers cpu_power,gpu_power,thermal,battery -i 1000 -o powe
 sudo powermetrics -s smc	Get fan speed
 man spindump	Get manual for spindump command
 yes > /dev/null &	Stress CPU
+find / -type f -name something.txt    Searches for a file from root directory

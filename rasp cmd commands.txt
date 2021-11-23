@@ -18,3 +18,4 @@ nano -> Edit a File
 cat -> Show the Contents of a File
 rm -> Remove a File
 cp -> Copy a File or Directory
+factor -> Factor integers
