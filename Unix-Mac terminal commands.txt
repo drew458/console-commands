@@ -142,3 +142,26 @@ sudo powermetrics -s smc	Get fan speed
 man spindump	Get manual for spindump command
 yes > /dev/null &	Stress CPU
 find / -type f -name something.txt    Searches for a file from root directory
+
+Raspberry Pi hooks
+sudo apt update -> Update Package Lists
+sudo apt upgrade -> Download and Install Updated Packages
+sudo apt clean -> Clean Old Package Files
+sudo raspi-config -> The Raspberry Pi Configuration Tool
+ls -> List Directory Contents
+cd -> Change Directories
+mkdir -> Create a Directory
+rmdir -> Remove a Directory
+mv -> Move a File
+tree -d -> Show a Tree of Directories
+pwd -> Show the Current Directory
+clear -> Clear the Terminal Window
+sudo halt -> Shut Down a Raspberry Pi
+sudo reboot -> Restart a Raspberry Pi
+startx -> Start the Desktop Environment (LXDE)
+ifconfig -> Find a Raspberry Pi's IP Address
+nano -> Edit a File
+cat -> Show the Contents of a File
+rm -> Remove a File
+cp -> Copy a File or Directory
+factor -> Factor integers
