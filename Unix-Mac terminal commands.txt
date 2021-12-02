@@ -101,7 +101,8 @@ tload – load average graph for terminal
 xload – load average graph for X
 /proc/loadavg – text file containing load average
 kill PID	Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
-ps -ax | grep <appname>	Find a process by name or PID
+ps -ax | grep <appname> Find a process by name or PID
+factor  Factor integers
 
 Network
 ping <host>	Ping host and display status
@@ -110,6 +111,8 @@ curl -O <url/to/file>	Download file via HTTP, HTTPS, or FTP
 ssh <username>@<host>	Establish SSH connection to <host> with user <username>
 scp <file><user>@<host>:/remote/path	Copy <file> to a remote <host>
 nettop	Dispaly network activity
+traceroute <host>	Display the packets route to the host
+networkQuality	Mac specific network quality test
 
 Homebrew
 brew doctor	Check brew for potential problems
@@ -129,6 +132,7 @@ Search
 find <dir> -name <"file">	Find all files named <file> inside <dir>. Use wildcards (*) to search for parts of filenames
 grep "<text>" <file>	Output all occurrences of <text> inside <file> (add -i for case insensitivity)
 grep -rl "<text>" <dir>	Search for all files containing <text> inside <dir>
+ls | grep "^abc"    Find all the files with name starting with abc in the current directory
 
 Output
 cat <file>	Output the content of <file>
@@ -148,20 +152,9 @@ sudo apt update -> Update Package Lists
 sudo apt upgrade -> Download and Install Updated Packages
 sudo apt clean -> Clean Old Package Files
 sudo raspi-config -> The Raspberry Pi Configuration Tool
-ls -> List Directory Contents
-cd -> Change Directories
-mkdir -> Create a Directory
-rmdir -> Remove a Directory
-mv -> Move a File
 tree -d -> Show a Tree of Directories
-pwd -> Show the Current Directory
 clear -> Clear the Terminal Window
 sudo halt -> Shut Down a Raspberry Pi
 sudo reboot -> Restart a Raspberry Pi
 startx -> Start the Desktop Environment (LXDE)
 ifconfig -> Find a Raspberry Pi's IP Address
-nano -> Edit a File
-cat -> Show the Contents of a File
-rm -> Remove a File
-cp -> Copy a File or Directory
-factor -> Factor integers
