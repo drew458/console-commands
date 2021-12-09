@@ -41,6 +41,7 @@ telnet		establish Telnet connection
 tftp		transfer files to a TFTP server
 tracert		trace routes similar to patchping
 arp 		display network addresses
+nslookup	simulate the domain name server
 
 
 attrib		display file attributes
