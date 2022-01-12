@@ -156,8 +156,10 @@ ifconfig -> Find a Raspberry Pi's IP Address
 
 Specific Scripts
 security find-generic-password -wa wifiname	Show Wi-Fi password
-sudo powermetrics --samplers cpu_power,gpu_power,thermal,battery -i 1000 -o powermetrics_log.txt	Powermetrics log
+sudo powermetrics --samplers cpu_power,gpu_power,thermal,battery -i 1000 -o powermetrics_log.txt	    Powermetrics log
 sudo powermetrics -s smc	Get fan speed
-man spindump	Get manual for spindump command
+man spindump	    Get manual for spindump command
 yes > /dev/null &	Stress CPU
 find / -type f -name something.txt    Searches for a file from root directory
+locate filename
+cat /dev/urandom
