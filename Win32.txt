@@ -87,5 +87,4 @@ reg		add/read/import/export registry entries
 
 batch file	->	:main   start	goto main
 (Possible one line console execution of script above)   :main & start & goto main
-
 shutdown -s -t 60

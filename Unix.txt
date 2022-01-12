@@ -161,3 +161,5 @@ sudo powermetrics -s smc	Get fan speed
 man spindump	Get manual for spindump command
 yes > /dev/null &	Stress CPU
 find / -type f -name something.txt    Searches for a file from root directory
+locate filename
+cat /dev/urandom
