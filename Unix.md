@@ -47,41 +47,41 @@
 * **inixi _-Fx_**   Show hardware info, beautifully wrapped
 
 ## File and Directory Management
-* **mkdir _[DIR]_**	Create new folder named DIR  
-* **mkdir _-p [DIR/DIR]_**	Create nested folders  
-* **mkdir _[DIR1] [DIR2] [DIR3]_**	Create several folders at once  
-* **mkdir _["DIR"]_**	Create a folder with a space in the filename  
-* **rmdir _[DIR]_**	Delete a folder (only works on empty folders)  
-* **rm _-R [DIR]_**	Delete a folder and its contents    
-* **cp _[FILE] [DIR]_**	Copy a file to the folder  
-* **cp _[FILE] [NEWFILE]_**	Copy a file to the current folder  
-* **cp _[FILE] [~/DIR/NEWFILE]_**	Copy a file to the folder and rename the copied file  
-* **cp _-R [DIR] ["new dir"]_**	Copy a folder to a new folder with spaces in the filename  
-* **cp _-i [FILEDIR]_**	Prompts you before copying a file with a warning overwrite message  
-* **cp _[FILE1] [FILE2] [FILE3/DIR]_**	Copy multiple files to a folder  
-* **rm _[FILE]_**	Delete a file (This deletes the file permanently; use with caution.)  
-* **rm _-i [FILE]_**	Delete a file only when you give confirmation  
-* **rm _-f [FILE]_**	Force removal without confirmation  
-* **rm _[FILE1] [FILE2] [FILE3]_**	Delete multiple files without any confirmation  
-* **mv _[FILE] [NEWFILENAME]_**	Move/rename  
-* **mv _[FILE] [DIR]_** Move a file to the folder, possibly by overwriting an existing file  
-* **mv _-i [FILE] [DIR]_**	Optional -i flag to warn you before overwriting the file  
-* <strong>mv _*.png [~/DIR]_</strong>	Move all PNG files from current folder to a different folder  
+* **mkdir _[dir]_**	Create new folder named dir  
+* **mkdir _-p [dir/dir]_**	Create nested folders  
+* **mkdir _[dir1] [dir2] [dir3]_**	Create several folders at once  
+* **mkdir _["dir"]_**	Create a folder with a space in the filename  
+* **rmdir _[dir]_**	Delete a folder (only works on empty folders)  
+* **rm _-R [dir]_**	Delete a folder and its contents    
+* **cp _[file] [dir]_**	Copy a file to the folder  
+* **cp _[file] [NEWfile]_**	Copy a file to the current folder  
+* **cp _[file] [~/dir/NEWfile]_**	Copy a file to the folder and rename the copied file  
+* **cp _-R [dir] ["new dir"]_**	Copy a folder to a new folder with spaces in the filename  
+* **cp _-i [filedir]_**	Prompts you before copying a file with a warning overwrite message  
+* **cp _[file1] [file2] [file3/dir]_**	Copy multiple files to a folder  
+* **rm _[file]_**	Delete a file (This deletes the file permanently; use with caution.)  
+* **rm _-i [file]_**	Delete a file only when you give confirmation  
+* **rm _-f [file]_**	Force removal without confirmation  
+* **rm _[file1] [file2] [file3]_**	Delete multiple files without any confirmation  
+* **mv _[file] [NEWfileNAME]_**	Move/rename  
+* **mv _[file] [dir]_** Move a file to the folder, possibly by overwriting an existing file  
+* **mv _-i [file] [dir]_**	Optional -i flag to warn you before overwriting the file  
+* <strong>mv _*.png [~/dir]_</strong>	Move all PNG files from current folder to a different folder  
 * **mdfind**  Spotlight search file  
 * **open**    Open a file with desktop app
 
 ## Command History  
 * **Ctrl + R**	Search through previously used commands  
 * **history n**	Shows the previous commands you've typed Add a number to limit to the last n items  
-* **![value]**	Execute the last command typed that starts with a value  
+* **!_[value]_**	Execute the last command typed that starts with a value  
 * **!!**	Execute the last command typed  
 
 ## Permissions  
 * **ls _-ld_**	Display the default permission for a home directory  
-* **ls _-ld/[DIR]_**	Display the read, write, and access permission of a particular folder  
-* **chmod _755 [FILE]_**	Change the permission of a file to 755  
-* **chmod _-R 600 [DIR]_**	Change the permission of a folder (and its contents) to 600  
-* **chown _USER:GROUP [FILE]_**	Change the ownership of a file to user and group. Add -R to include folder contents
+* **ls _-ld/[dir]_**	Display the read, write, and access permission of a particular folder  
+* **chmod _755 [file]_**	Change the permission of a file to 755  
+* **chmod _-R 600 [dir]_**	Change the permission of a folder (and its contents) to 600  
+* **chown _user:group [file]_**	Change the ownership of a file to user and group. Add -R to include folder contents
 
 ## Processes & Statistics
 * **ps _-ax_**	Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal  
@@ -102,15 +102,15 @@
 * **xload** Load average graph for X  
 * **/proc/loadavg** Text file containing load average  
 * **kill _PID_**	Quit process with ID _PID_. You'll see PID as a column in the Activity Monitor  
-* **ps _-ax | grep [APPNAME]_** Find a process by name or PID
+* **ps _-ax_ | grep _[appname]_** Find a process by name or PID
 * **factor**  Factor integers  
 
 ## Networking
-* **ping _[HOST]_**	Ping host and display status  
-* **whois _[DOMAIN]_**	Output whois info for a domain  
+* **ping _[host]_**	Ping host and display status  
+* **whois _[domain]_**	Output whois info for a domain  
 * **curl _-O [url/to/file]_**	Download file via HTTP, HTTPS, or FTP  
 * **ssh _[username]@[host]_**	Establish SSH connection to _host_ with user _username_  
-* **scp _FILE[user]@[host]:[/remote/path]_**	Copy _FILE_ to a remote _host_  
+* **scp _file[user]@[host]:[/remote/path]_**	Copy _file_ to a remote _host_  
 * **nettop**	Display network activity  
 * **traceroute _[host]_**	Display the packets route to the host   
 * **dig _[host]_**	Simulate the domain name server  **networkQuality**	macOS Monterey specific network quality test    
@@ -130,15 +130,15 @@
 * **brew _cask uninstall [cask]_**	Uninstall the given cask
 
 ## Search
-* **find _DIR -name ["FILE"]_**	Find all files named _FILE_ inside _DIR_. Use wildcards (*) to search for parts of filenames
-* **grep _"[TEXT]" [FILE]_**	Output all occurrences of _TEXT_ inside FILE (add -i for case insensitivity)
-* **grep _-rl "[TEXT]" DIR_**	Search for all files containing _TEXT_ inside _DIR_
+* **find _dir -name ["file"]_**	Find all files named _file_ inside _dir_. Use wildcards (*) to search for parts of filenames
+* **grep _"[text]" [file]_**	Output all occurrences of _TEXT_ inside file (add -i for case insensitivity)
+* **grep _-rl "[text]" dir_**	Search for all files containing _TEXT_ inside _dir_
 * **ls | grep _"^abc"_**    Find all the files with name starting with abc in the current directory
 
 ## Output
-* **cat _[FILE]_**	Output the content of _FILE_
-* **less _[FILE]_**	Output the contents of _FILE_ using the less command that supports pagination and more
-* **head _[FILE]_**	Output the first 10 lines of _FILE_
+* **cat _[file]_**	Output the content of _file_
+* **less _[file]_**	Output the contents of _file_ using the less command that supports pagination and more
+* **head _[file]_**	Output the first 10 lines of _file_
 
 ## Raspberry Pi hooks
 * **sudo apt _update_** Update Package Lists
@@ -159,5 +159,5 @@
 * **sudo powermetrics _-s smc_**	macOS specific get fan speed  
 * **yes _> /dev/null &_**	Stress CPU  
 * **find _/ -type f -name something.txt_**    Searches for a file from root directory  
-* **locate _[FILENAME]_** Locate a file by name  
+* **locate _[filename]_** Locate a file by name  
 * **cat _/dev/urandom_**    Freeze the console with endless random stream output
