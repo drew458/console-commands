@@ -35,14 +35,14 @@
 * `netstat`		display TCP/IP connections and status  
 * `nslookup`	query the DNS  
 * `pathping`	test the connection to a specific IP address  
-* `ping _[domainname]_`		pings the network  
+* `ping [domainname]`		pings the network  
 * `route`		display network routing table, add static routes  
 * `systeminfo`	displays computer-specific properties and configurations  
 * `telnet`		establish Telnet connection  
 * `tftp`		transfer files to a TFTP server  
-* `tracert _[domainname]_`		trace routes similar to patchping  
-* `arp _-a_`		display network addresses  
-* `nslookup _[domainname]_`	simulate the domain name server  
+* `tracert [domainname]`		trace routes similar to patchping  
+* `arp -a`		display network addresses  
+* `nslookup [domainname]`	simulate the domain name server  
 
 ## File/Directory operations
 * `attrib`		display file attributes  
@@ -89,5 +89,5 @@
 * in a batch file (.bat) ->	`:main   start	goto main`  
 (Possible one line console execution of script above)  
 `:main & start & goto main`  
-* `shutdown _-s -t 60_`  
+* `shutdown -s -t 60`  
 * `while (1) { ps | sort -desc cpu | select -first 30; sleep-seconds 2; cls }` top command equivalent in Windows
