@@ -38,7 +38,7 @@
 * `du`	List usage for each subdirectory and its contents
 * `du -sh [folder]`	Human readable output of all files in a directory
 * `du -s`	Display an entry for each specified file
-* <strong>du -sk* | sort -nr</strong>	List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
+* `du -sk* | sort -nr`	List files and folders, totaling the size including the subfolders. Replace sk* with sm* to list directories in MB
 * `df -h`	Calculate your system's free disk space
 * `df -H`	Calculate free disk space in powers of 1,000 (as opposed to 1,024)
 * `lscpu`   Show cpu stats
