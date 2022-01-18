@@ -26,7 +26,7 @@
 * `ls -C`	Force multi-column output of the listing  
 * `ls -a`	List all entries including those with .(period) and ..(double period)  
 * `ls -1`	Output the list of files in one entry per line format  
-* `ls -F`	Display a / (slash) immediately after each path that is a directory, * (asterisk) after executable   programs or scripts, and @ after a symbolic link
+* `ls -F`	Display a / (slash) immediately after each path that is a directory, * (asterisk) after executable programs or scripts, and @ after a symbolic link
 * `ls -S`	Sort files or entries by size  
 * `ls -l`	List in a long format. Includes file mode, owner and group name, date and time file was modified, pathname, and more  
 * `ls -lt`	List the files sorted by time modified (most recent first)  
@@ -54,8 +54,8 @@
 * `rmdir [dir]`	Delete a folder (only works on empty folders)  
 * `rm -R [dir]`	Delete a folder and its contents    
 * `cp [file] [dir]`	Copy a file to the folder  
-* `cp [file] [NEWfile]`	Copy a file to the current folder  
-* `cp [file] [~/dir/NEWfile]`	Copy a file to the folder and rename the copied file  
+* `cp [file] [newfile]`	Copy a file to the current folder  
+* `cp [file] [~/dir/newfile]`	Copy a file to the folder and rename the copied file  
 * `cp -R [dir] ["new dir"]`	Copy a folder to a new folder with spaces in the filename  
 * `cp -i [filedir]`	Prompts you before copying a file with a warning overwrite message  
 * `cp [file1] [file2] [file3/dir]`	Copy multiple files to a folder  
@@ -63,7 +63,7 @@
 * `rm -i [file]`	Delete a file only when you give confirmation  
 * `rm -f [file]`	Force removal without confirmation  
 * `rm [file1] [file2] [file3]`	Delete multiple files without any confirmation  
-* `mv [file] [NEWfileNAME]`	Move/rename  
+* `mv [file] [newfilename]`	Move/rename  
 * `mv [file] [dir]` Move a file to the folder, possibly by overwriting an existing file  
 * `mv -i [file] [dir]`	Optional -i flag to warn you before overwriting the file  
 * <strong>mv *.png [~/dir]</strong>	Move all PNG files from current folder to a different folder  
