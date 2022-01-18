@@ -151,7 +151,6 @@ clear -> Clear the Terminal Window
 sudo halt -> Shut Down a Raspberry Pi
 sudo reboot -> Restart a Raspberry Pi
 startx -> Start the Desktop Environment (LXDE)
-ifconfig -> Find a Raspberry Pi's IP Address
 
 
 Specific Scripts

@@ -1,4 +1,4 @@
-**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for clarity.
+**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for the sake of clarity.
 
 ## Basics  
 * **/** _(Forward Slash)_   Top level directory  
@@ -113,7 +113,8 @@
 * **scp _file[user]@[host]:[/remote/path]_**	Copy _file_ to a remote _host_  
 * **nettop**	Display network activity  
 * **traceroute _[host]_**	Display the packets route to the host   
-* **dig _[host]_**	Simulate the domain name server  **networkQuality**	macOS Monterey specific network quality test    
+* **dig _[host]_**	Simulate the domain name server  **networkQuality**	macOS Monterey specific network quality test  
+* **ifconfig** Find your IP address
 
 ## Homebrew
 * **brew _doctor_**	Check brew for potential problems
@@ -150,8 +151,6 @@
 * **sudo _halt_** Shut Down a Raspberry Pi
 * **sudo _reboot_** Restart a Raspberry Pi
 * **startx** Start the Desktop Environment (LXDE)
-* **ifconfig** Find a Raspberry Pi's IP Address
-
 
 ## Specific Scripts
 * **security _find-generic-password -wa wifiname_**	Show Wi-Fi password  
