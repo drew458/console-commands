@@ -86,7 +86,7 @@
 * **reg**		add/read/import/export registry entries  
 
 ## Specific scripts
-* batch file	->	**:main   start	goto main**  
+* in a batch file (.bat) ->	**:main   start	goto main**  
 (Possible one line console execution of script above)  
 **:main & start & goto main**  
 * **shutdown _-s -t 60_**  
