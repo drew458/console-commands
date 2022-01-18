@@ -2,91 +2,91 @@
 **Disclaimer:** All the commands are compatible with PowerShell, only a subset is compatible with CMD.
 
 ## Generic
-* `call`		calls a batch file from another one  
-* `cd`		change directory  
-* `cls`		clear screen  
-* `cmd`		start command prompt  
-* `color`		change console color  
-* `date`		show/set date  
-* `dir`		list directory content  
-* `echo`		text output  
-* `exit`		exits the command prompt or a batch file  
-* `find`		find files  
-* `hostname`	display host name  
-* `pause`		pauses the execution of a batch file and * shows a message  
-* `runas`		start a program as another user  
-* `shutdown`	shutdown the computer  
-* `sort`		sort the screen output  
-* `start`		start an own window to execute a program or command  
-* `taskkill`	terminate a process or a application  
-* `tasklist`	display applications and related tasks  
-* `time`		display/edit the system time  
-* `timeout`		wait any time  
-* `title`		set title for prompt  
-* `ver`		display operating system version  
-* `w32tm`		setting time synchronisation/time server/time zone  
+* `call`		Calls a batch file from another one  
+* `cd`		Change directory  
+* `cls`		Clear screen  
+* `cmd`		Start command prompt  
+* `color`		Change console color  
+* `date`		Show/set date  
+* `dir`		List directory content  
+* `echo`		Text output  
+* `exit`		Exits the command prompt or a batch file  
+* `find`		Find files  
+* `hostname`	Display host name  
+* `pause`		Pauses the execution of a batch file and * shows a message  
+* `runas`		Start a program as another user  
+* `shutdown`	Shutdown the computer  
+* `sort`		Sort the screen output  
+* `start`		Start an own window to execute a program or command  
+* `taskkill`	Terminate a process or a application  
+* `tasklist`	Display applications and related tasks  
+* `time`		Display/edit the system time  
+* `timeout`		Wait any time  
+* `title`		Set title for prompt  
+* `ver`		Display operating system version  
+* `w32tm`		Setting time synchronisation/time server/time zone  
 
 ## Networking
-* `ftp`		transfer files to a FTP server  
-* `ftype`		display file type and mapping  
-* `getmac`		display MAC address  
-* `ipconfig`	display IP network settings  
-* `netsh`		configure/control/display network components  
-* `netstat`		display TCP/IP connections and status  
-* `nslookup`	query the DNS  
-* `pathping`	test the connection to a specific IP address  
-* `ping [domainname]`		pings the network  
-* `route`		display network routing table, add static routes  
-* `systeminfo`	displays computer-specific properties and configurations  
-* `telnet`		establish Telnet connection  
-* `tftp`		transfer files to a TFTP server  
-* `tracert [domainname]`		trace routes similar to patchping  
-* `arp -a`		display network addresses  
-* `nslookup [domainname]`	simulate the domain name server  
+* `ftp`		Transfer files to a FTP server  
+* `ftype`		Display file type and mapping  
+* `getmac`		Sisplay MAC address  
+* `ipconfig`	Sisplay IP network settings  
+* `netsh`		Configure/control/display network components  
+* `netstat`		Display TCP/IP connections and status  
+* `nslookup`	Query the DNS  
+* `pathping`	Test the connection to a specific IP address  
+* `ping [domainname]`		Pings the network  
+* `route`		Display network routing table, add static routes  
+* `systeminfo`	Displays computer-specific properties and configurations  
+* `telnet`		Establish Telnet connection  
+* `tftp`		Transfer files to a TFTP server  
+* `tracert [domainname]`		Trace routes similar to patchping  
+* `arp -a`		Display network addresses  
+* `nslookup [domainname]`	Simulate the domain name server  
 
 ## File/Directory operations
-* `attrib`		display file attributes  
-* `comp`		compare file contents  
-* `compact`	display/change file compression  
-* `copy / xcopy`	copy files  
-* `diskcomp`	compare content of two floppy disks  
-* `diskcopy`	copy floppy disc to another one  
-* `erase / del`	delete one or more files  
-* `expand`		extract files  
-* `fc`	copare files and display the differences  
-* `mkdir`		create a new directory  
-* `move`		move/rename files  
-* `rename`		rename files  
-* `replace`		replace files  
-* `rmdir / rd`	delete directory  
-* `tree`		display folder structure graphically  
-* `type`		display content of text files  
+* `attrib`		Display file attributes  
+* `comp`		Compare file contents  
+* `compact`	Display/change file compression  
+* `copy / xcopy`	Copy files  
+* `diskcomp`	Compare content of two floppy disks  
+* `diskcopy`	Copy floppy disc to another one  
+* `erase / del`	Delete one or more files  
+* `expand`		Extract files  
+* `fc`	Compare files and display the differences  
+* `mkdir`		Create a new directory  
+* `move`		Move/rename files  
+* `rename`		Rename files  
+* `replace`		Replace files  
+* `rmdir / rd`	Delete directory  
+* `tree`		Display folder structure graphically  
+* `type`		Display content of text files  
 
 ## I/O and Disks
-* `chkdsk`		check volumes  
-* `chkntfs`		display/change volume check at startup  
+* `chkdsk`		Check volumes  
+* `chkntfs`		Display/change volume check at startup  
 * `sfc`	System file scan  
-* `defrag`		defragment media  
-* `diskpart`	volume management  
-* `driverquery`	display installed devices and their properties  
-* `format`		format volumes  
-* `label`		change volume name  
-* `mode`		configure interfaces/devices  
-* `mountvol`	assign/delete drive mountpoints  
-* `verify`		monitoring whether volumes are written correctly  
-* `vol`		show volume description and serial numbers of the HDDs  
-* `powercfg`	energy and battery reports and options  
+* `defrag`		Defragment media  
+* `diskpart`	Volume management  
+* `driverquery`	Display installed devices and their properties  
+* `format`		Format volumes  
+* `label`		Change volume name  
+* `mode`		Configure interfaces/devices  
+* `mountvol`	Assign/delete drive mountpoints  
+* `verify`		Monitoring whether volumes are written correctly  
+* `vol`		Show volume description and serial numbers of the HDDs  
+* `powercfg`	Energy and battery reports and options  
 
 ## PowerShell scripting
 * `for`		for loop  
-* `gpresult`	display group policies  
-* `gpupdate`	update group policies  
-* `perfmon`		start performance monitor  
-* `prompt`		change command prompt  
-* `reg`		add/read/import/export registry entries  
+* `gpresult`	Display group policies  
+* `gpupdate`	Update group policies  
+* `perfmon`		Start performance monitor  
+* `prompt`		Change command prompt  
+* `reg`		Add/read/import/export registry entries  
 
 ## Specific scripts
-* in a batch file (.bat) ->	`:main   start	goto main`  
+* In a batch file (.bat) ->	`:main   start	goto main`  
 (Possible one line console execution of script above)  
 `:main & start & goto main`  
 * `shutdown -s -t 60`  
