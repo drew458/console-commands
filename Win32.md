@@ -1,4 +1,4 @@
-**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for clarity.  
+**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for the sake of clarity.  
 **Disclaimer:** All the commands are compatible with PowerShell, only a subset is compatible with CMD.
 
 ## Generic
