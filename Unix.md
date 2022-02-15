@@ -45,6 +45,7 @@
 * `lshw`    Show hardware stats
 * `hwinfo`  Show hardware infos
 * `inixi -Fx`   Show hardware info, beautifully wrapped
+* `df` Show file system usage
 
 ## File and Directory Management
 * `mkdir [dir]`	Create new folder named dir  
@@ -89,14 +90,15 @@
 * `top`	Display live information about currently running processes  
 * `htop`	See processes and memory stats  
 * `top -ocpu -s 5`	Display processes sorted by CPU usage, updating every 5 seconds  
-* `top -o rsize`	Sort top by memory usage  
+* `top -o rsize`	Sort top by memory usage
+* `free` Show memory usage  
 * `vmstat`  Report virtual memory statistics  
 * `dstat, atop` Helps correlate all existing resource data for processes, memory, paging, block I/O, traps, and CPU activity.  
 * `iftop` Interactive network traffic viewer per interface
 * `nethogs` Interactive network traffic viewer per process  
 * `iotop` Interactive I/O viewer  
-* `iostat` For storage I/O statistics  
-* `netstat` For network statistics  
+* `iostat` For storage I/O statistics
+* `sar` 
 * `mpstat` For CPU statistics  
 * `tload` Load average graph for terminal  
 * `xload` Load average graph for X  
@@ -106,6 +108,7 @@
 * `factor`  Factor integers  
 
 ## Networking
+* `ifconfig` Find your IP address
 * `ping [host]`	Ping host and display status  
 * `whois [domain]`	Output whois info for a domain  
 * `curl -O [url/to/file]`	Download file via HTTP, HTTPS, or FTP  
@@ -113,8 +116,10 @@
 * `scp file[user]@[host]:[/remote/path]`	Copy file to a remote host  
 * `nettop`	Display network activity  
 * `traceroute [host]`	Display the packets route to the host   
-* `dig [host]`	Simulate the domain name server  `networkQuality`	macOS Monterey specific network quality test  
-* `ifconfig` Find your IP address
+* `dig [host]`	Simulate the domain name server
+* `netstat` Show listening ports (deprecated)
+* `ss` Show listening ports (successor to `netstat`)  
+* `networkQuality`	macOS Monterey specific network quality test  
 
 ## Homebrew
 * `brew doctor`	Check brew for potential problems
