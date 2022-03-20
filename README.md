@@ -34,6 +34,7 @@ Curated and comprehensive list of Linux-Mac (Unix) and Windows console commands.
   
 </details>
 
+-----------------
 
 # <a name="unix"></a>Unix
 
@@ -202,6 +203,8 @@ Curated and comprehensive list of Linux-Mac (Unix) and Windows console commands.
 * `find / -type f -name something.txt`    Searches for a file from root directory  
 * `locate [filename]` Locate a file by name  
 * `cat /dev/urandom`    Freeze the console with endless random stream output
+
+-----------------
 
 # Win32
 
