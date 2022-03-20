@@ -1,11 +1,12 @@
 # console-commands
 Curated and comprehensive list of Linux-Mac (Unix) and Windows console commands.  
 
+-----------------
+
 **Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for the sake of clarity.  
 **Disclaimer:** In Win32, all the commands are compatible with PowerShell, only a subset is compatible with CMD.
 
 ## <a name="toc"></a>Table of Contents
------------------
 <details open><summary><sup>Hide</sup>/<sub>Show</sub></summary><br/>
 
 [Unix](#unix)
