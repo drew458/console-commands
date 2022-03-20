@@ -1,7 +1,43 @@
-# Unix
-**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for the sake of clarity.
+# console-commands
+Curated and comprehensive list of Linux-Mac (Unix) and Windows console commands.  
 
-## Basics  
+**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for the sake of clarity.  
+**Disclaimer:** In Win32, all the commands are compatible with PowerShell, only a subset is compatible with CMD.
+
+## <a name="toc"></a>Table of Contents
+-----------------
+<details open><summary><sup>Hide</sup>/<sub>Show</sub></summary><br/>
+
+[Unix](#unix)
+  * [Basics](#unix-basics)
+  * [Change Directory](#unix-cd)
+  * [List Directory Contents](#unix-ls)
+  * [File Size and Disk Space](#unix-filedisk)
+  * [File and Directory Management](#unix-filedirectory)
+  * [Command History](#unix-commandhistory)
+  * [Permissions](#unix-permissions)
+  * [Processes & Statistics](#unix-processes)
+  * [Networking](#unix-networking)
+  * [Homebrew](#unix-homebrew)
+  * [Search](#unix-search)
+  * [Output](#unix-output)
+  * [Raspberry Pi hooks](#unix-raspberry)
+  * [Specific Scripts](#unix-specificscripts)
+  
+[Win32](#win32)
+  * [Generic](#win32-generic)
+  * [Networking](#win32-networking)
+  * [File/Directory operations](#win32-filedirectory)
+  * [I/O and Disks](#win32-io)
+  * [Powershell scripting](#win32-powershell)
+  * [Specific scripts](#win32-specificscripts)
+  
+</details>
+
+
+# <a name="unix"></a>Unix
+
+## <a name="unix-basics"></a>Basics  
 * `/` (Forward Slash)   Top level directory  
 * `.` (Single Period)	Current directory  
 * `..` (Double Period)	Parent directory  
@@ -12,7 +48,7 @@
 * `[command] -h`	Get help about a command  
 * `man [command]`	Show the help manual of the command  
 
-## Change Directory
+## <a name="unix-cd"></a>Change Directory
 * `cd`	Home directory  
 * `cd [folder]`	Change directory, e.g. cd Documents  
 * `cd ~`	Home directory  
@@ -22,7 +58,7 @@
 * `cd..`	Move up to the parent directory  
 * `cd../..`	Move up two levels  
 
-## List Directory Contents  
+## <a name="unix-ls"></a>List Directory Contents  
 * `ls`	Display the name of files and subdirectories in the directory  
 * `ls -C`	Force multi-column output of the listing  
 * `ls -a`	List all entries including those with .(period) and ..(double period)  
@@ -35,7 +71,7 @@
 * `ls -lo`	List the file names with size, owner, and flags  
 * `ls -la`	List detailed directory contents, including hidden files  
 
-## File Size and Disk Space
+## <a name="unix-filedisk"></a>File Size and Disk Space
 * `du`	List usage for each subdirectory and its contents
 * `du -sh [folder]`	Human readable output of all files in a directory
 * `du -s`	Display an entry for each specified file
@@ -48,7 +84,7 @@
 * `inixi -Fx`   Show hardware info, beautifully wrapped
 * `df` Show file system usage
 
-## File and Directory Management
+## <a name="unix-filedirectory"></a>File and Directory Management
 * `mkdir [dir]`	Create new folder named dir  
 * `mkdir -p [dir/dir]`	Create nested folders  
 * `mkdir [dir1] [dir2] [dir3]`	Create several folders at once  
@@ -72,20 +108,20 @@
 * `mdfind`  Spotlight search file  
 * `open`    Open a file with desktop app
 
-## Command History  
+## <a name="unix-commandhistory"></a>Command History  
 * `Ctrl + R`	Search through previously used commands  
 * `history n`	Shows the previous commands you've typed Add a number to limit to the last n items  
 * `![value]`	Execute the last command typed that starts with a value  
 * `!!`	Execute the last command typed  
 
-## Permissions  
+## <a name="unix-permissions"></a>Permissions  
 * `ls -ld`	Display the default permission for a home directory  
 * `ls -ld/[dir]`	Display the read, write, and access permission of a particular folder  
 * `chmod 755 [file]`	Change the permission of a file to 755  
 * `chmod -R 600 [dir]`	Change the permission of a folder (and its contents) to 600  
 * `chown user:group [file]`	Change the ownership of a file to user and group. Add -R to include folder contents
 
-## Processes & Statistics
+## <a name="unix-processes"></a>Processes & Statistics
 * `ps -ax`	Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal  
 * `ps -aux`	Shows all the processes with %cpu, %mem, page in, PID, and command  
 * `top`	Display live information about currently running processes  
@@ -108,7 +144,7 @@
 * `ps -ax | grep [appname]` Find a process by name or PID
 * `factor`  Factor integers  
 
-## Networking
+## <a name="unix-networking"></a>Networking
 * `ifconfig` Find your IP address
 * `ping [host]`	Ping host and display status  
 * `whois [domain]`	Output whois info for a domain  
@@ -122,7 +158,7 @@
 * `ss` Show listening ports (successor to `netstat`)  
 * `networkQuality`	macOS Monterey specific network quality test  
 
-## Homebrew
+## <a name="unix-homebrew"></a>Homebrew
 * `brew doctor`	Check brew for potential problems
 * `brew install [formula]`	Install a formula
 * `brew uninstall [formula]`	Uninstall a formula
@@ -136,18 +172,18 @@
 * `brew cask install [cask]`	Install the given cask
 * `brew cask uninstall [cask]`	Uninstall the given cask
 
-## Search
+## <a name="unix-search"></a>Search
 * `find dir -name ["file"]`	Find all files named file inside dir. Use wildcards (*) to search for parts of filenames
 * `grep "[text]" [file]`	Output all occurrences of TEXT inside file (add -i for case insensitivity)
 * `grep -rl "[text]" dir`	Search for all files containing TEXT inside dir
 * `ls | grep "^abc"`    Find all the files with name starting with abc in the current directory
 
-## Output
+## <a name="unix-output"></a>Output
 * `cat [file]`	Output the content of file
 * `less [file]`	Output the contents of file using the less command that supports pagination and more
 * `head [file]`	Output the first 10 lines of file
 
-## Raspberry Pi hooks
+## <a name="unix-raspberry"></a>Raspberry Pi hooks
 * `sudo apt update` Update Package Lists
 * `sudo apt upgrade` Download and Install Updated Packages
 * `sudo apt clean` Clean Old Package Files
@@ -158,7 +194,7 @@
 * `sudo reboot` Restart a Raspberry Pi
 * `startx` Start the Desktop Environment (LXDE)
 
-## Specific Scripts
+## <a name="unix-specificscripts"></a>Specific Scripts
 * `security find-generic-password -wa wifiname`	Show Wi-Fi password  
 * `sudo powermetrics --samplers cpupower,gpupower,thermal,battery -i 1000 -o powermetricslog.txt`	Powermetrics logs into a file 
 * `sudo powermetrics -s smc`	macOS specific get fan speed  
@@ -169,10 +205,7 @@
 
 # Win32
 
-**Disclaimer:** Don't insert the square brackets when typing the command in the console, they are used here just for the sake of clarity.  
-**Disclaimer:** All the commands are compatible with PowerShell, only a subset is compatible with CMD.
-
-## Generic
+## <a name="win32-generic"></a>Generic
 * `call`		Calls a batch file from another one  
 * `cd`		Change directory  
 * `cls`		Clear screen  
@@ -197,7 +230,7 @@
 * `ver`		Display operating system version  
 * `w32tm`		Setting time synchronisation/time server/time zone  
 
-## Networking
+## <a name="win32-networking"></a>Networking
 * `ftp`		Transfer files to a FTP server  
 * `ftype`		Display file type and mapping  
 * `getmac`		Sisplay MAC address  
@@ -215,7 +248,7 @@
 * `arp -a`		Display network addresses  
 * `nslookup [domainname]`	Simulate the domain name server  
 
-## File/Directory operations
+## <a name="win32-filedirectory"></a>File/Directory operations
 * `attrib`		Display file attributes  
 * `comp`		Compare file contents  
 * `compact`	Display/change file compression  
@@ -233,7 +266,7 @@
 * `tree`		Display folder structure graphically  
 * `type`		Display content of text files  
 
-## I/O and Disks
+## <a name="win32-io"></a>I/O and Disks
 * `chkdsk`		Check volumes  
 * `chkntfs`		Display/change volume check at startup  
 * `sfc`	System file scan  
@@ -248,7 +281,7 @@
 * `vol`		Show volume description and serial numbers of the HDDs  
 * `powercfg`	Energy and battery reports and options  
 
-## PowerShell scripting
+## <a name="win32-powershell"></a>PowerShell scripting
 * `for`		for loop  
 * `gpresult`	Display group policies  
 * `gpupdate`	Update group policies  
@@ -256,7 +289,7 @@
 * `prompt`		Change command prompt  
 * `reg`		Add/read/import/export registry entries  
 
-## Specific scripts
+## <a name="win32-specificscripts"></a>Specific scripts
 * In a batch file (.bat) ->	`:main   start	goto main`  
 (Possible one line console execution of script above)  
 `:main & start & goto main`  
